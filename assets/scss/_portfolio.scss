@@ -1,0 +1,36 @@
+.portfolio__active {
+  background-color: $primary;
+  color: #fff;
+}
+.box {
+  position: relative;
+  overflow: hidden;
+  img {
+    transition: all 0.5s ease-in;
+  }
+  .info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: white;
+    background-color: rgba($primary, 0.75);
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+  }
+
+  &:hover {
+    img {
+      transform: scale(1.2);
+    }
+    .info {
+      opacity: 1;
+    }
+  }
+}

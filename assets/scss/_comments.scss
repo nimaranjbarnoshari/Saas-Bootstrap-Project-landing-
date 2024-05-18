@@ -1,0 +1,7 @@
+.comments {
+  @include gradient;
+}
+
+.carousel-card {
+  background-color: rgba($color: $white, $alpha: 0.8);
+}
